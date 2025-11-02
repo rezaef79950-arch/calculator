@@ -1,0 +1,68 @@
+/* تنظیمات کلی صفحه */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;   /* وسط‌چین افقی */
+  align-items: center;       /* وسط‌چین عمودی */
+  direction: rtl;
+
+  /* 👇 عکس پس‌زمینه: اینجا اسم عکس خودت رو بذار */
+  background-image: url('aa.jpeg'); /* ← اینجا اسم عکس خودت رو بذار */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* جعبه اصلی لاگین یا ماشین حساب */
+.container {
+  background: rgba(255, 255, 255, 0.9); /* نیمه‌شفاف برای خوانایی بهتر */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* ورودی‌ها */
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 240px;
+  font-size: 18px;
+  text-align: right;
+}
+
+/* دکمه‌ها */
+button {
+  padding: 15px;
+  margin: 5px;
+  font-size: 18px;
+  width: 60px;
+  cursor: pointer;
+}
+
+/* دکمه پاک کردن */
+.clear {
+  grid-column: span 4;
+  background-color: #f44336;
+  color: white;
+  width: 100%;
+}
+
+/* پیام خطا */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* چیدمان دکمه‌ها به صورت جدول */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
