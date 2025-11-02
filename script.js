@@ -3,12 +3,13 @@ function login() {
   const password = document.getElementById("password").value.trim();
   const error = document.getElementById("error");
 
-  const correctUsername = "user";
-  const correctPassword = "1234";
+  const correctUsername = "amir";
+  const correctPassword = "10987654321";
 
   if (username === correctUsername && password === correctPassword) {
     window.location.href = "calculator.html";
   } else {
     error.textContent = "نام کاربری یا رمز عبور اشتباه است.";
   }
+
 }
